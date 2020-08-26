@@ -224,12 +224,15 @@ header ul li a {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   display: inline-block;
+  -webkit-transition: font-size 0.3s;
+  transition: font-size 0.3s;
+  padding: 10px;
 }
 
 header ul li a:hover {
-  font-size: 1.5rem;
-  -webkit-transition: width 2s linear 1s;
-  transition: width 2s linear 1s;
+  background-color: #986970;
+  border-radius: 30px;
+  color: #fefdfd;
 }
 
 header img {
@@ -248,6 +251,12 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+header img:hover {
+  height: 93vh;
 }
 
 h1 {
@@ -306,15 +315,6 @@ h2 {
   background-color: #f3f3f4;
 }
 
-.skills img {
-  height: 120px;
-  margin: 60px;
-}
-
-.skills img:hover {
-  height: 200px;
-}
-
 .skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,8 +332,104 @@ h2 {
   margin: 0 auto;
 }
 
+.skills ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #14110F;
+  padding: 60px;
+}
+
+.skills ul li img {
+  height: 120px;
+  margin-bottom: 20px;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.skills ul li img:hover {
+  height: 180px;
+}
+
 .projects img {
   height: 500px;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.projects img:hover {
+  height: 540px;
+}
+
+.projects a {
+  color: #14110F;
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.projects p {
+  color: #14110F;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: space-between;
+  margin: 6% 0 10% 0;
+}
+
+.project .appliedSkills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.project .appliedSkills img {
+  height: 50px;
+  margin: 10px;
+}
+
+.undersea, .potluck {
+  margin-top: 20%;
+}
+
+.lifecycle img, .potluck img {
+  margin-right: 200px;
+}
+
+.undersea img {
+  margin-left: 200px;
 }
 
 .contactMe {
@@ -346,9 +442,10 @@ h2 {
 }
 
 .contactMe .fab {
-  font-size: 5rem;
+  font-size: 3rem;
   display: inline;
-  padding: 0 40px 0 40px;
+  padding: 40px;
+  color: #363d3f;
 }
 
 .contactLinks {
@@ -381,9 +478,61 @@ form {
           align-items: center;
 }
 
+.contactFormTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nameField, .emailField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+.username, .email {
+  width: 380px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px #363d3f;
+          box-shadow: 2px 2px #363d3f;
+}
+
+textarea {
+  width: 800px;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #808080;
+  padding-left: 5px;
+  -webkit-box-shadow: 2px 2px #363d3f;
+          box-shadow: 2px 2px #363d3f;
+}
+
 .submitButton {
+  margin-top: 30px;
+  height: 60px;
   display: block;
   width: 100%;
+  border-radius: 10px;
+  background-color: #363d3f;
+  color: #f3f3f4;
+  font-size: 1.5rem;
+}
+
+.submitButton:hover {
+  background-color: #f3f3f4;
+  color: #363d3f;
 }
 
 footer {
@@ -406,12 +555,13 @@ footer p {
 .wrapper {
   width: 80%;
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 h2 {
   color: #14110F;
   font-family: "Cinzel", serif;
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;

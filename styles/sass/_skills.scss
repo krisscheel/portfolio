@@ -1,22 +1,38 @@
 
 .skills {
   background-color: $backgroundColor;
-  img {
-    height: 120px;
-    margin: 60px;
-    &:hover {
-      height: 200px;
-    }
-  }
-  ul {
+    ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 50%;
     margin: 0 auto;
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $bodyFont;
+        font-size: 1rem;
+        color: $textColor;
+        padding: 60px;
+          img {
+            height: 120px;
+            margin-bottom: 20px;
+            transition: height 0.5s;
+            &:hover {
+              height: 180px;
+            }
+          }
+      }
   }
 }
+
+
+
+
+
 
 
 

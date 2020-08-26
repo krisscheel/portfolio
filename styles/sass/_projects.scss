@@ -1,5 +1,58 @@
 .projects {
   img {
     height: 500px;
+    transition: height 0.5s;
+    &:hover {
+      height: 540px;
+    }
+  }
+  a {
+    color: $textColor;
+    font-family: $bodyFont;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  p {
+    color: $textColor;
+    font-family: $bodyFont;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
   }
 }
+
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-direction: space-between;
+  margin: 6% 0 10% 0;
+    .appliedSkills {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      img {
+      height: 50px;
+      margin: 10px;
+    }
+  }
+}
+
+.undersea, .potluck {
+  margin-top: 20%;
+}
+
+.lifecycle, .potluck {
+  img {
+    margin-right: 200px;
+  }
+}
+
+.undersea {
+  img {
+    margin-left: 200px;
+  }
+}
+
+

@@ -1,0 +1,22 @@
+
+.skills {
+  background-color: $backgroundColor;
+  img {
+    height: 120px;
+    margin: 60px;
+    &:hover {
+      height: 200px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+
+

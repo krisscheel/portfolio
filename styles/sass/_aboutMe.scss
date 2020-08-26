@@ -1,0 +1,34 @@
+
+.aboutMe {
+  background-color: $primaryColorFour;
+    .headshot {
+    height: 500px;
+    border-radius: 400px;
+    box-shadow: 5px -5px $primaryColorComplement;
+    margin: 8%;
+  }
+}
+
+.aboutMeBox {
+  display: flex;
+  flex-direction: row;
+  .aboutMeCopy {
+    margin-top: 8%;
+    color: $backgroundColor;
+    font-family: $bodyFont;
+    font-size: 2rem;
+    padding-top: 60px;
+    h2 {
+      color: $backgroundColor;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  p {
+    margin-top: 5%;
+    margin-right: 20%;
+    line-height: 1.5;
+  }
+}

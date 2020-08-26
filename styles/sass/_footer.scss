@@ -1,0 +1,13 @@
+
+footer {
+  background-color: $primaryColorFour;
+  p { 
+    padding:5% 0 2% 0;
+    color: $primaryColorComplement;
+    font-family: $bodyFont;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+

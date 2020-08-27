@@ -9,24 +9,30 @@
   a {
     color: $textColor;
     font-family: $bodyFont;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     text-decoration: none;
+    &:hover {
+      color: $primaryColorFour;
+    }
   }
   p {
     color: $textColor;
     font-family: $bodyFont;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     margin-top: 20px;
     line-height: 1.5;
   }
 }
 
+.rightContent {
+  width: 30%;
+}
+
 .project {
   display: flex;
   flex-direction: row;
-  flex-direction: space-between;
   margin: 6% 0 10% 0;
     .appliedSkills {
       display: flex;

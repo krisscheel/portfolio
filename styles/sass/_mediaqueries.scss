@@ -1,0 +1,64 @@
+
+
+@media (max-width: 1500px) {
+  .skills ul li img {
+      height: 80px;
+      &:hover {
+        height: 100px;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+.aboutMeBox {
+  .aboutMeCopy {
+    margin-top: 8%;
+    font-size: 1rem;
+    padding-top: 60px;
+    }
+  } 
+  .projects img {
+    margin: 0;
+    padding: 0;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    p {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .aboutMeBox {
+    .headshot {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .projects {
+    img {
+      height: 200px;
+      transition: height 0.5s;
+      &:hover {
+      height: 240px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+}

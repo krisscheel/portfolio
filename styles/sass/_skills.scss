@@ -1,12 +1,12 @@
 
 .skills {
+  margin-top: 200px;
   background-color: $backgroundColor;
     ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 50%;
     margin: 0 auto;
       li {
         display: flex;

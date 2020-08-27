@@ -18,6 +18,10 @@
   flex-direction: row;
   justify-content: center;
   padding-bottom: 20px;
+  a {
+    text-decoration: none;
+    padding-top: 40px;
+  }
 }
 
 form {
@@ -26,10 +30,6 @@ form {
   justify-content: center;
   align-items: center;
 }
-
-// .contactBox {
-//   background-color: $backgroundColor;
-// }
 
 .contactFormTop {
   display: flex;

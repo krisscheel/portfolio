@@ -268,6 +268,11 @@ h2 {
   color: #f3f3f4;
 }
 
+.aboutMeBackground {
+  background-color: #986970;
+  margin-bottom: 5%;
+}
+
 .aboutMe {
   background-color: #986970;
   display: -webkit-box;
@@ -276,6 +281,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 40px;
 }
 
 .aboutMe .headshot {
@@ -302,6 +308,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .aboutMeBox .aboutMeCopy h2 {
@@ -322,6 +329,10 @@ h2 {
   background-color: #f3f3f4;
 }
 
+.skills h2 {
+  text-align: center;
+}
+
 .skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,9 +343,8 @@ h2 {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 auto;
 }
 
@@ -385,6 +395,7 @@ h2 {
   font-size: 3rem;
   margin-bottom: 20px;
   text-decoration: none;
+  text-align: center;
 }
 
 .projects a:hover {
@@ -402,6 +413,10 @@ h2 {
 
 .rightContent {
   width: 30%;
+}
+
+.secondContent {
+  display: none;
 }
 
 .project {
@@ -445,6 +460,10 @@ h2 {
   margin-left: 200px;
 }
 
+.contactMeBackground {
+  background-color: #b5ced2;
+}
+
 .contactMe {
   background-color: #b5ced2;
 }
@@ -452,6 +471,7 @@ h2 {
 .contactMe h2 {
   margin: 0;
   padding-top: 8%;
+  text-align: center;
 }
 
 .contactMe .fab {
@@ -570,20 +590,29 @@ footer p {
           justify-content: center;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1550px) {
   .skills ul li img {
     height: 80px;
   }
   .skills ul li img:hover {
     height: 100px;
   }
+  .aboutMeBox .headshot {
+    height: 300px;
+  }
+  .aboutMeBox .aboutMeCopy {
+    margin-left: 0;
+    padding-top: 20px;
+    font-size: 1.2rem;
+  }
 }
 
-@media (max-width: 1450px) {
-  .aboutMeBox .aboutMeCopy {
-    margin-top: 8%;
-    font-size: 1rem;
-    padding-top: 60px;
+@media (max-width: 1470px) {
+  body h2 {
+    font-size: 4rem;
+  }
+  .projects h2 {
+    font-size: 4rem;
   }
   .projects img {
     margin: 0;
@@ -622,16 +651,94 @@ footer p {
   }
   .rightContent p {
     width: 60%;
+    text-align: center;
+  }
+  .leftContent {
+    display: none;
+  }
+  .secondContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .secondContent p {
+    width: 60%;
+    text-align: center;
+  }
+  header img {
+    height: 60vh;
+  }
+  header img:hover {
+    height: 60vh;
   }
 }
 
-@media (max-width: 1260px) {
-  .aboutMeBox .headshot {
-    height: 300px;
+@media (max-width: 1280px) {
+  header ul {
+    display: none;
+  }
+  header .aboutMeBox .headshot {
+    height: 200px;
+  }
+  header .aboutMeBox .aboutMeCopy {
+    margin-top: 8%;
+    font-size: 1rem;
+    padding-top: 0;
+  }
+  header .aboutMeBox .aboutMeCopy h2 {
+    font-size: 3rem;
+  }
+  header .skills h2 {
+    width: 60%;
+  }
+  header .skills ul li img {
+    height: 60px;
+    margin-bottom: 10px;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+  }
+  header .skills ul li img:hover {
+    height: 60px;
+  }
+  header .contactMe .username, header .contactMe .email {
+    width: 280px;
+    margin: 10px;
+  }
+  header .contactMe textarea {
+    width: 580px;
   }
 }
 
 @media (max-width: 900px) {
+  body h2 {
+    font-size: 2rem;
+  }
+  header img {
+    height: 50vh;
+  }
+  header img:hover {
+    height: 50vh;
+  }
+  .projects h2 {
+    font-size: 2rem;
+  }
+  .projects .title {
+    font-size: 1.5rem;
+  }
+  .projects p {
+    font-size: 1rem;
+  }
   .projects img {
     height: 200px;
     -webkit-transition: height 0.5s;
@@ -640,11 +747,114 @@ footer p {
   .projects img:hover {
     height: 240px;
   }
+  .projects .appliedSkills img {
+    height: 20px;
+  }
+  .projects .appliedSkills imghover {
+    height: 30px;
+  }
+  .contactMe .contactFormTop {
+    display: block;
+  }
+  .contactMe .contactFormTop .username, .contactMe .contactFormTop .email {
+    width: 400px;
+    margin: 10px;
+  }
+  .contactMe textarea {
+    width: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  header img {
+    height: 40vh;
+  }
+  header img:hover {
+    height: 40vh;
+  }
+  .aboutMeBox .headshot {
+    height: 100px;
+  }
+  .aboutMeBox .aboutMeCopy h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header img {
+    height: 30vh;
+  }
+  header img:hover {
+    height: 30vh;
+  }
+  .aboutMeBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutMeBox .aboutMeCopy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .aboutMeBox .aboutMeCopy p {
+    text-align: center;
+    margin-right: 0;
+    padding: 20px;
+  }
+  .contactMe .contactFormTop {
+    display: block;
+  }
+  .contactMe .contactFormTop .username, .contactMe .contactFormTop .email {
+    width: 220px;
+    margin: 10px;
+  }
+  .contactMe textarea {
+    width: 220px;
+  }
+  .contactMe .fab {
+    font-size: 2rem;
+    display: inline;
+    padding: 10px;
+    color: #363d3f;
+  }
+}
+
+@media (max-width: 400px) {
+  header img {
+    height: 20vh;
+  }
+  header img:hover {
+    height: 20vh;
+  }
 }
 
 .wrapper {
   width: 80%;
   margin: 0 auto;
+  max-width: 1600px;
 }
 
 h2 {

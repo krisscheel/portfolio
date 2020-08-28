@@ -12,6 +12,7 @@
     font-size: 3rem;
     margin-bottom: 20px;
     text-decoration: none;
+    text-align: center;
     &:hover {
       color: $primaryColorFour;
     }
@@ -28,6 +29,10 @@
 
 .rightContent {
   width: 30%;
+}
+
+.secondContent {
+  display: none;
 }
 
 .project {

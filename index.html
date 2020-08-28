@@ -33,8 +33,9 @@
       
     </div>
   </header>
-  
+
   <main>
+    <div class="aboutMeBackground">
     <section class="aboutMe wrapper" id="aboutMe">
       <div class="aboutMeBox">
         <img src="./images/Kristen_web.jpg" alt="headshot of Kristen Scheel" class="headshot">
@@ -44,6 +45,7 @@
         </div>
       </div>
     </section>
+  </div>
 
     <section class="skills wrapper" id="skills">
       <div>
@@ -91,11 +93,10 @@
     
     <section class="projects wrapper" id="projects">
       <h2>Projects</h2>
-
           <div class="lifecycle project">
             <a href="http://www.kscheel.com/lifecycle/" target="_blank"><img src="./images/lifecycle.png" alt="screenshot of website on a device"></a>
             <div class="rightContent">
-              <a href="http://www.kscheel.com/lifecycle/" target="_blank">The Lifecycle of Clothing</a>
+              <a href="http://www.kscheel.com/lifecycle/" target="_blank" class="title">The Lifecycle of Clothing</a>
               <p>A dynamic data visualization built using JavaScript and JQuery, demonstrating the lifecycle of various clothing items.</p>
               <div>
                 <ul class="appliedSkills">
@@ -110,8 +111,8 @@
           </div>
 
           <div class="undersea project">
-            <div class="rightContent">
-            <a href="http://www.kscheel.com/undersea/" target="_blank">Under the Sea</a>
+            <div class="rightContent leftContent">
+            <a href="http://www.kscheel.com/undersea/" target="_blank" class="title">Under the Sea</a>
             <p>A fully responsive, multi-page PSD conversion using SCSS and Flexbox.</p>
               <div>
                 <ul class="appliedSkills">
@@ -122,12 +123,23 @@
               </div>
               </div>
               <a href="http://www.kscheel.com/undersea/" target="_blank"><img src="./images/undersea.png" alt="screenshot of website on a device"></a>
-          </div>
+              <div class="secondContent">
+                <a href="http://www.kscheel.com/undersea/" target="_blank" class="title">Under the Sea</a>
+                <p>A fully responsive, multi-page PSD conversion using SCSS and Flexbox.</p>
+                  <div>
+                    <ul class="appliedSkills">
+                      <li><img src="./images/HTML.svg" alt="HTML5 logo"></li>
+                      <li><img src="./images/CSS.svg" alt="CSS logo"></li>
+                      <li><img src="./images/github.svg" alt="GitHub logo"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
           <div class="potluck project">
             <a href="https://krisscheel.github.io/kristenScheelProject5/" target="_blank"><img src="./images/potluck.png" alt="screenshot of website on a device"></a>
             <div class="rightContent">
-              <a href="https://krisscheel.github.io/kristenScheelProject5/" target="_blank">Potluck</a>
+              <a href="https://krisscheel.github.io/kristenScheelProject5/" target="_blank" class="title">Potluck</a>
               <p>A fully responsive React.js application that dynamically displays information stored in firebase, allowing the user to add or remove their name from a sign-up form.</p>
               <div>
                 <ul class="appliedSkills">
@@ -142,6 +154,7 @@
           </div>
     </section>
 
+  <div class="contactMeBackground">
     <section class="contactMe wrapper" id="contactMe">
       <div class="contactBox">
       <h2>Contact Me</h2>
@@ -174,6 +187,7 @@
       <script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/kristen-scheel', text: 'Schedule time with me', color: '#3f1e39', textColor: '#ffffff', branding: false });</script>
       <!-- Calendly badge widget end -->
     </section>
+  </div>
 
   </main>
   <footer>

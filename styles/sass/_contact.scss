@@ -1,9 +1,14 @@
 
+.contactMeBackground {
+  background-color: $primaryColorTwo;
+}
+
 .contactMe {
   background-color: $primaryColorTwo;
   h2 {
     margin: 0;
     padding-top: 8%;
+    text-align: center;
   }
   .fab {
     font-size: 3rem;

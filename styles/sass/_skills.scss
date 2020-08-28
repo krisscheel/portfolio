@@ -2,11 +2,14 @@
 .skills {
   margin-top: 200px;
   background-color: $backgroundColor;
+  h2 {
+    text-align: center;
+  }
     ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
       li {
         display: flex;

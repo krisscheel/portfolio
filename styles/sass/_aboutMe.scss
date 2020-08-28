@@ -1,8 +1,14 @@
 
+.aboutMeBackground {
+  background-color: $primaryColorFour;
+  margin-bottom: 5%;
+}
+
 .aboutMe {
   background-color: $primaryColorFour;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
     .headshot {
     height: 500px;
     border-radius: 400px;
@@ -20,6 +26,7 @@
     font-family: $bodyFont;
     font-size: 1.6rem;
     padding-top: 60px;
+    padding-bottom: 60px;
     h2 {
       color: $backgroundColor;
       display: block;

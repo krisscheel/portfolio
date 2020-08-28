@@ -1,22 +1,33 @@
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1550px) {
   .skills ul li img {
       height: 80px;
       &:hover {
         height: 100px;
     }
   }
+  .aboutMeBox {
+    .headshot {
+      height: 300px;
+    }
+    .aboutMeCopy {
+      margin-left: 0;
+      padding-top: 20px;
+      font-size: 1.2rem;
+    }
+  }
 }
 
-@media (max-width: 1450px) {
-.aboutMeBox {
-  .aboutMeCopy {
-    margin-top: 8%;
-    font-size: 1rem;
-    padding-top: 60px;
+@media (max-width: 1470px) {
+  body h2 {
+    font-size: 4rem;
+  }
+  .projects {
+    h2 {
+      font-size: 4rem;
     }
-  } 
+  }
   .projects img {
     margin: 0;
     padding: 0;
@@ -35,20 +46,100 @@
     width: 100%;
     p {
       width: 60%;
+      text-align: center;
+    }
+  }
+
+  .leftContent {
+    display: none;
+  }
+  .secondContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    p {
+      width: 60%;
+      text-align: center;
+    }
+  }
+
+  header img {
+    height: 60vh;
+    &:hover {
+      height: 60vh;
     }
   }
 }
 
-@media (max-width: 1260px) {
-  .aboutMeBox {
-    .headshot {
-      height: 300px;
+@media (max-width: 1280px) {
+  header {
+  ul {
+    display: none;
+  }
+
+.aboutMeBox {
+  .headshot {
+    height: 200px;
+  }
+  .aboutMeCopy {
+    margin-top: 8%;
+    font-size: 1rem;
+    padding-top: 0;
+      h2 {
+      font-size: 3rem;
+      }
+    }
+  } 
+  .skills h2 {
+    width: 60%;
+  }
+  .skills ul li {
+    img {
+      height: 60px;
+      margin-bottom: 10px;
+      transition: height 0.5s;
+      &:hover {
+        height: 60px;
+      }
     }
   }
+  .contactMe {
+    .username, .email {
+      width: 280px;
+      margin: 10px;
+    }
+    textarea {
+      width: 580px;
+    }
+  }
+}
 }
 
 @media (max-width: 900px) {
+  body h2 {
+    font-size: 2rem;
+  }
+  header img {
+    height: 50vh;
+    &:hover {
+      height: 50vh;
+    }
+  }
   .projects {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
     img {
       height: 200px;
       transition: height 0.5s;
@@ -56,9 +147,99 @@
       height: 240px;
       }
     }
+
+    .appliedSkills img {
+      height: 20px;
+      &hover {
+        height: 30px;
+      }
+    }
+  }
+  .contactMe {
+  .contactFormTop {
+    display: block;
+  .username, .email {
+    width: 400px;
+    margin: 10px;
+    }
+  }
+  textarea {
+    width: 400px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  header img {
+    height: 40vh;
+      &:hover {
+      height: 40vh;
+    }
+  }
+.aboutMeBox {
+  .headshot {
+    height: 100px;
+  }
+  .aboutMeCopy {
+      h2 {
+      font-size: 2rem;
+      }
+    }
   }
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 600px) {
+  header img {
+    height: 30vh;
+    &:hover {
+      height: 30vh;
+    }
+  }
+  .aboutMeBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .aboutMeCopy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      p {
+        text-align: center;
+        margin-right: 0;
+        padding: 20px;
+      }
+    }
+  }
+  .contactMe {
+  .contactFormTop {
+    display: block;
+  .username, .email {
+    width: 220px;
+    margin: 10px;
+    }
+  }
+  textarea {
+    width: 220px;
+    }
+  .fab {
+    font-size: 2rem;
+    display: inline;
+    padding: 10px;
+    color: $darkComplement;
+  }
+}
+}
+
+@media (max-width: 400px) {
+  header img {
+    height: 20vh;
+    &:hover {
+      height: 20vh;
+    }
+  }
 }

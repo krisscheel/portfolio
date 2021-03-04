@@ -9,14 +9,22 @@
     margin: 0;
     padding-top: 8%;
     text-align: center;
+    color: $primaryColorOne;
   }
+  .contactBox {
+    background-color: $primaryColorFour;
+    margin-bottom: 150px;
+    box-shadow: -10px 10px $primaryColorThree;
+
+}
+}
+
   .fab {
-    font-size: 3rem;
+    font-size: 1rem;
     display: inline;
     padding: 40px;
-    color: $darkComplement;
+    color: $primaryColorOne;
   }
-}
 
 .contactLinks {
   display: flex;
@@ -34,44 +42,42 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-style: none;
 }
 
 .contactFormTop {
   display: flex;
   flex-direction: row;
+  border-style: none;
 }
 
 .nameField, .emailField {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-style: none;
 }
 
 .username, .email {
   width: 380px;
   height: 40px;
   margin: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px $darkComplement;
 }
 
 textarea {
   width: 800px;
-  border-radius: 10px;
   font-family: $bodyFont;
   font-size: 1rem;
   color: #808080;
   padding-left: 5px;
-  box-shadow: 2px 2px $darkComplement;
+  border-style: none;
 }
 
 .submitButton {
-  margin-top: 30px;
+  margin: 30px 0;
   height: 60px;
   display: block;
   width: 100%;
-  border-radius: 10px;
-  background-color: $darkComplement;
+  background-color: $primaryColorOne;
   color: $backgroundColor;
   font-size: 1.5rem;
   &:hover {

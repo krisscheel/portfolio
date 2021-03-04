@@ -10,27 +10,44 @@
   <!--google fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans:wght@300;400&display=swap"
     rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
 
   <title>Kristen Scheel</title>
   <!--stylesheet-->
+  <link rel="stylesheet" href="./_reset/styles.css">
   <link rel="stylesheet" href="./styles/styles.css">
+  
 </head>
 <body>
 
-  <header class="wrapper">
-    <div>
-      <ul>
-        <li>
-          <a href="#aboutMe">About Me</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contactMe">Contact</a>
-        </li>
-      </ul>
-      <div class="logoContainer">
-        <img src="./images/kscheel_Logo.jpg" alt="kristen scheel logo">
+  <header class="topHeader">
+    <div class="wrapper">
+      <!--navigation menu-->
+      <div>
+        <ul>
+          <li>
+            <a href="#aboutMe">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">WORK</a>
+            <a href="#contactMe">CONTACT</a>
+          </li>
+        </ul>     
       </div>
-      
+
+  <!--interactive typography section-->
+      <div class="logoContainer">
+        <script src="./p5.min.js"></script>
+        <script src="./script.js"></script>
+      </div>
+
+      <!--descriptive title-->
+      <div class="title">
+        <h2 class="highlighted">Freelance</h2>
+        <h2>Web Developper</h2>
+      </div>
+
     </div>
   </header>
 
@@ -38,60 +55,63 @@
     <div class="aboutMeBackground">
     <section class="aboutMe wrapper" id="aboutMe">
       <div class="aboutMeBox">
-        <img src="./images/Kristen_web.jpg" alt="headshot of Kristen Scheel" class="headshot">
+        <img src="./images/Kristen_web_B&W.png" alt="headshot of Kristen Scheel" class="headshot">
         <div class="aboutMeCopy">
           <h2>About Me</h2>
-          <p>I am a front-end web developer with a background in digital marketing and communications. I am passionate about using digital media to convey complex information and tell compelling stories.</p>
+          <p>Hello! I'm Kristen, a front-end web developer who loves smart, accessible design. I specialize in using digital media to tell compelling stories.</p>
         </div>
       </div>
     </section>
   </div>
 
-    <section class="skills wrapper" id="skills">
-      <div>
-        <h2>Skills & Technologies</h2>
-        <ul>
-          <li>
-            <img src="./images/HTML.svg" alt="HTML5 logo">
-            <p>HTML</p>
-          </li>
-          <li>
-            <img src="./images/CSS.svg" alt="CSS logo">
-            <p>CSS</p>
-          </li>
-          <li>
-            <img src="./images/sass.svg" alt="Sass logo">
-            <p>SCSS</p>
-          </li>
-          <li>
-            <img src="./images/javascript.svg" alt="javascript logo">
-            <p>JavaScript</p>
-          </li>
-          <li>
-            <img src="./images/jquery.svg" alt="JQuery logo">
-            <p>JQuery</p>
-          </li>
-          <li>
-            <img src="./images/firebase.png" alt="firebase logo"/>
-            <p>Firebase</p>
-          </li>
-          <li>
-            <img src="./images/react.svg" alt="React logo">
-            <p>React</p>
-          </li>
-          <li>
-            <img src="./images/shopify.svg" alt="Shopify logo">
-            <p>Shopify</p>
-          </li>
-          <li>
-            <img src="./images/github.svg" alt="GitHub logo">
-            <p>GitHub</p>
-          </li>
-        </ul>
+    <section class="skills" id="skills">
+      <div class="wrapper">
+        <div>
+          <h2>Skills & Technologies</h2>
+          <ul>
+            <li>
+              <img src="./images/HTML.svg" alt="HTML5 logo">
+              <p>HTML</p>
+            </li>
+            <li>
+              <img src="./images/CSS.svg" alt="CSS logo">
+              <p>CSS</p>
+            </li>
+            <li>
+              <img src="./images/sass.svg" alt="Sass logo">
+              <p>SCSS</p>
+            </li>
+            <li>
+              <img src="./images/javascript.svg" alt="javascript logo">
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <img src="./images/jquery.svg" alt="JQuery logo">
+              <p>JQuery</p>
+            </li>
+            <li>
+              <img src="./images/firebase.png" alt="firebase logo"/>
+              <p>Firebase</p>
+            </li>
+            <li>
+              <img src="./images/react.svg" alt="React logo">
+              <p>React</p>
+            </li>
+            <li>
+              <img src="./images/shopify.svg" alt="Shopify logo">
+              <p>Shopify</p>
+            </li>
+            <li>
+              <img src="./images/github.svg" alt="GitHub logo">
+              <p>GitHub</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     
-    <section class="projects wrapper" id="projects">
+    <section class="projects" id="projects">
+      <div class="wrapper">
       <h2>Projects</h2>
           <div class="lifecycle project">
             <a href="http://www.kscheel.com/lifecycle/" target="_blank"><img src="./images/lifecycle.png" alt="screenshot of website on a device"></a>
@@ -152,46 +172,51 @@
               </div>
             </div>
           </div>
+        </div>
     </section>
 
   <div class="contactMeBackground">
     <section class="contactMe wrapper" id="contactMe">
+      <h2>Let's Work Together</h2>
       <div class="contactBox">
-      <h2>Contact Me</h2>
-        <form action="https://formspree.io/mqkyvaoa" method="POST">
-          <div class="contactFormTop">
-            <div class="nameField">
-              <label class="sr-only" for="username">Full Name</label>
-              <input type="text" name="username" placeholder=" Name" id="username" class="username">
+          <form action="https://formspree.io/mqkyvaoa" method="POST">
+            <div class="contactFormTop">
+              <div class="nameField">
+                <label class="sr-only" for="username">Full Name</label>
+                <input type="text" name="username" placeholder=" Name" id="username" class="username">
+              </div>
+              <div class="emailField">
+                <label class="sr-only" for="email">Email Address</label>
+                <input type="email" name="email" placeholder=" Email address" id="email" class="email">
+              </div>
             </div>
-            <div class="emailField">
-              <label class="sr-only" for="email">Email Address</label>
-              <input type="email" name="email" placeholder=" Email address" id="email" class="email">
+            <div class="contactFormBottom">
+              <textarea name="comment" cols="55" rows="10">message</textarea>
+              <button class="submitButton">submit</button>
             </div>
-          </div>
-          <div class="contactFormBottom">
-            <textarea name="comment" cols="55" rows="10">Write your message here...</textarea>
-            <button class="submitButton">submit</button>
-          </div>
-          </form>
-          <div class="contactLinks">
-            <a href="https://github.com/krisscheel" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/kristenscheel/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/kscheel" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://medium.com/@kristenscheel" target="_blank"><i class="fab fa-medium"></i></a>
-          </div>
+            </form>
+            
         </div>
+        
+        <div class="contactLinks">
+          <a href="https://github.com/krisscheel" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/kristenscheel/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/kscheel" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://medium.com/@kristenscheel" target="_blank"><i class="fab fa-medium"></i></a>
+        </div>
+
       <!-- Calendly badge widget begin -->
       <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
       <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-      <script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/kristen-scheel', text: 'Schedule time with me', color: '#3f1e39', textColor: '#ffffff', branding: false });</script>
+      <script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/kristen-scheel', text: 'Schedule a call with me', color: '#050748', textColor: '#ffffff', branding: false });</script>
       <!-- Calendly badge widget end -->
     </section>
   </div>
 
   </main>
   <footer>
-    <p>Copyright © 2020 Kristen Scheel</p>
+    <p>Copyright © 2021 Kristen Scheel</p>
   </footer>
+
 </body>
 </html>

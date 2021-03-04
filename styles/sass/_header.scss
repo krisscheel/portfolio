@@ -1,46 +1,67 @@
 
 header {
+  height: 90vh;
+  display: block;
+
+  .logoContainer {
+    position: relative;
+  }
+
+  .title {
+    position: absolute;
+    top: -300px;
+    left: 45px;
+    z-index: 1;
+    padding-top: 700px;
+    padding-left: 400px;
+    height: 30px;
+    h2 {
+      font-size: 40px;
+      color: $primaryColorOne;
+      display: inline;
+      }
+    .highlighted {
+      background-color: $primaryColorThree;
+      }
+    }
+
   ul {
-    margin: 30px 80px 0 80px;
+    margin: 30px 20px 0 20px;
     float: right;
+    background-color: $primaryColorTwo;
     li a {
-    margin: 0px 40px 0px 40px;
+    margin: 0px 10px 0px 10px;
     text-decoration: none;
-    color: $textColor;
+    color: $primaryColorOne;
     font-size: 1rem;
-    font-family: $bodyFont;
+    font-family: $headerFont;
     display: inline-block;
-    transition: font-size 0.3s;
-    padding: 10px;
+    padding: 5px;
     &:hover {
-      background-color: $primaryColorFour;
-      border-radius: 30px;
-      color: $primaryColorComplement;
+      background-color: $primaryColorThree;
+      height: 20px;
+      color: $primaryColorOne;
+      }
     }
   }
 }
 
-  img {
-    margin: 0 auto;
-    height: 90vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    transition: height 0.5s;
-    &:hover {
-      height: 93vh;
-    }
-  }
+body {
+	font-family: Arial;
+	font-size: 5px;
+	line-height: 1.5;
+	
+	background-color: #e0fddf;
+	color: #050748;
 }
 
-h1 {
-  color: $primaryColorOne;
-  font-size: 8rem;
+canvas {
+  position:  absolute;
+  top:  50%;
+  left:  50%;
+  transform:  translate(-50%, -50%);
 }
 
-h2 {
-  color: $backgroundColor
-}
+
 
 

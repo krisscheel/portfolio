@@ -1,11 +1,13 @@
 
 .skills {
-  margin-top: 200px;
-  background-color: $backgroundColor;
+  margin-top: 100px;
+  background-color: $primaryColorTwo;
+
   h2 {
     text-align: center;
+    color: $primaryColorOne;
   }
-    ul {
+  ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,7 +20,7 @@
         align-items: center;
         font-family: $bodyFont;
         font-size: 1rem;
-        color: $textColor;
+        color: $primaryColorOne;
         padding: 60px;
           img {
             height: 120px;
@@ -28,8 +30,8 @@
               height: 180px;
             }
           }
+        }
       }
-  }
 }
 
 
